@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	min-width: 800px;
+}
+
+p{
+	text-indent: 2em;
+}
+
+/*头部*/
+.header{
+	background-color: #F2F4F4;
+	height: 70px;
+	margin-bottom: 15px;
+}
+
+/*头部标题*/
+.header h1{
+	padding-top: 20px;
+}
+
+/*主体部分*/
+.article{
+	background-color: #F2F4F4;
+	/*padding-left: 150px;
+	padding-right: 100px;*/
+	overflow: hidden;
+}
+
+/*底部*/
+.footer{
+	background-color: red;
+	height: 60px;
+	margin-top: 10px;
+	background-color: #ECD7E2;
+	text-align: center;
+}
+
+/*主体左侧部分*/
+.article .left{
+	background-color: #ECD7E2;
+	float: left;
+	width: 150px;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+	margin-left: -100%;
+	/*position: relative;
+	left: -150px;*/
+}
+
+/*主体右侧部分*/
+.article .right{
+	background-color: #ECD7E2;
+	float: left;
+	width: 100px;
+	/*height: 18px;*/
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+	margin-left: -100px;
+	/*position: relative;
+	left: 100px;*/
+}
+
+/*主体中间部分*/
+.article .middle{
+	background-color: #fff;
+	float: left;
+	 /*width: 100%; */
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+}
+		
+.inner{
+	margin-left: 160px;
+	margin-right: 110px;
+	background: #ccc;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+}

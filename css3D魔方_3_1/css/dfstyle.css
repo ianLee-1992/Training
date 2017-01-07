@@ -1,0 +1,710 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.view{
+	width: 300px;
+	height: 300px;
+	margin: 200px auto 0 auto;
+}
+/*魔方动画效果*/
+.box{
+	animation-name: animation;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-duration: 3s;
+	margin: 80;
+	transform-style: preserve-3d;
+	transform-origin: 80px 80px 0;
+
+	/*-webkit*/
+	-webkit-animation-name: animation;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 3s;
+	-moz-animation-duration: 3s;
+	margin: 80;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: 80px 80px 0;
+	/*-webkit-perspective: 138px;*/
+
+	/*-moz*/
+	-moz-animation-name: animation;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-duration: 3s;
+	-moz-animation-duration: 3s;
+	margin: 80;
+	-moz-transform-style: preserve-3d;
+	-moz-transform-origin: 80px 80px 0;
+	
+}
+@keyframes animation{
+	from,to{}
+	16%{transform: rotateY(-90deg);}
+	33%{transform: rotateY(-90deg) rotateZ(135deg);}
+	50%{transform: rotateY(225deg) rotateZ(135deg);}
+	66%{transform: rotateY(135deg) rotateX(135deg);}
+	83%{transform: rotateX(135deg);}
+}
+
+@-webkit-keyframes animation{
+	from,to{}
+	16%{-webkit-transform: rotateY(-90deg);}
+	33%{-webkit-transform: rotateY(-90deg) rotateZ(135deg);}
+	50%{-webkit-transform: rotateY(225deg) rotateZ(135deg);}
+	66%{-webkit-transform: rotateY(135deg) rotateX(135deg);}
+	83%{-webkit-transform: rotateX(135deg);}
+}
+
+@-moz-keyframes animation{
+	from,to{}
+	16%{-moz-transform: rotateY(-90deg);}
+	33%{-moz-transform: rotateY(-90deg) rotateZ(135deg);}
+	50%{-moz-transform: rotateY(225deg) rotateZ(135deg);}
+	66%{-moz-transform: rotateY(135deg) rotateX(135deg);}
+	83%{-moz-transform: rotateX(135deg);}
+}
+
+/*div样式*/
+.box div{
+	position: absolute;
+	height: 300px;
+	width: 300px;
+	border: 0 solid #000;
+	/*background: rgba(255,200,100,0.8);*/
+	text-align: center;
+	font-size: 130px;
+	border-radius: 10px;
+}
+
+/*魔方红色9格部分*/
+.box .one .o1{
+	height: 100px;
+	width: 100px;
+	float: left;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(209, 76, 78);
+}
+
+.box .one .t2{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-left: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(209, 76, 78);
+}
+
+.box .one .t3{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-left: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(209, 76, 78);
+}
+.box .one .f4{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(209, 76, 78);
+}
+.box .one .f5{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 100px;
+	margin-left: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(209, 76, 78) url('../img/youtube_32px.ico') no-repeat center;
+}
+.box .one .s6{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 100px;
+	margin-left: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(209, 76, 78);
+}
+.box .one .s7{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(209, 76, 78);
+}
+.box .one .e8{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 200px;
+	margin-left: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(209, 76, 78);
+}
+.box .one .n9{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 200px;
+	margin-left: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(209, 76, 78);
+}
+
+/*魔方黄色9格部分*/
+.box .two .o1{
+	height: 100px;
+	width: 100px;
+	float: left;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(230, 208, 2);
+}
+
+.box .two .t2{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-left: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(230, 208, 2);
+}
+
+.box .two .t3{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-left: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(230, 208, 2);
+}
+.box .two .f4{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(230, 208, 2);
+}
+.box .two .f5{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 100px;
+	margin-left: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(230, 208, 2) url('../img/yahoo_32px.ico') no-repeat center;
+}
+.box .two .s6{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 100px;
+	margin-left: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(230, 208, 2);
+}
+.box .two .s7{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(230, 208, 2);
+}
+.box .two .e8{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 200px;
+	margin-left: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(230, 208, 2);
+}
+.box .two .n9{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 200px;
+	margin-left: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(230, 208, 2);
+}
+
+/*魔方蓝色9格部分*/
+.box .three .o1{
+	height: 100px;
+	width: 100px;
+	float: left;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(18, 58, 85);
+}
+
+.box .three .t2{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-left: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(18, 58, 85);
+}
+
+.box .three .t3{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-left: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(18, 58, 85);
+}
+.box .three .f4{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(18, 58, 85);
+}
+.box .three .f5{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 100px;
+	margin-left: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(18, 58, 85) url('../img/apple_32px.ico') no-repeat center;
+}
+.box .three .s6{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 100px;
+	margin-left: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(18, 58, 85);
+}
+.box .three .s7{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(18, 58, 85);
+}
+.box .three .e8{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 200px;
+	margin-left: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(18, 58, 85);
+}
+.box .three .n9{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 200px;
+	margin-left: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgb(18, 58, 85);
+}
+
+/*魔方白色9格部分*/
+.box .four .o1{
+	height: 100px;
+	width: 100px;
+	float: left;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(255,255,255,1);
+}
+
+.box .four .t2{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-left: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(255,255,255,1);
+}
+
+.box .four .t3{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-left: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(255,255,255,1);
+}
+.box .four .f4{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(255,255,255,1);
+}
+.box .four .f5{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 100px;
+	margin-left: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(255,255,255,1) url('../img/twitter_32px.ico') no-repeat center;
+}
+.box .four .s6{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 100px;
+	margin-left: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(255,255,255,1);
+}
+.box .four .s7{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(255,255,255,1);
+}
+.box .four .e8{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 200px;
+	margin-left: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(255,255,255,1);
+}
+.box .four .n9{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 200px;
+	margin-left: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(255,255,255,1);
+}
+
+/*魔方绿色9格部分*/
+.box .five .o1{
+	height: 100px;
+	width: 100px;
+	float: left;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(15,185,52,1);
+}
+
+.box .five .t2{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-left: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(15,185,52,1);
+}
+
+.box .five .t3{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-left: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(15,185,52,1);
+}
+.box .five .f4{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(15,185,52,1);
+}
+.box .five .f5{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 100px;
+	margin-left: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(15,185,52,1) url('../img/linkedin_32px.ico') no-repeat center;
+}
+.box .five .s6{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 100px;
+	margin-left: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(15,185,52,1);
+}
+.box .five .s7{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(15,185,52,1);
+}
+.box .five .e8{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 200px;
+	margin-left: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(15,185,52,1);
+}
+.box .five .n9{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 200px;
+	margin-left: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(15,185,52,1);
+}
+
+/*魔方橘黄色9格部分*/
+.box .six .o1{
+	height: 100px;
+	width: 100px;
+	float: left;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(255,182,0,1);
+}
+
+.box .six .t2{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-left: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(255,182,0,1);
+}
+
+.box .six .t3{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-left: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(255,182,0,1);
+}
+.box .six .f4{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(255,182,0,1);
+}
+.box .six .f5{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 100px;
+	margin-left: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(255,182,0,1) url('../img/vimeo_32px.ico') no-repeat center;
+}
+.box .six .s6{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 100px;
+	margin-left: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(255,182,0,1);
+}
+.box .six .s7{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(255,182,0,1);
+}
+.box .six .e8{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 200px;
+	margin-left: 100px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(255,182,0,1);
+}
+.box .six .n9{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-top: 200px;
+	margin-left: 200px;
+	border: 2px solid #999;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: rgba(255,182,0,1);
+}
+
+/*第一个面A*/
+.box .one{
+	-webkit-transform: translateZ(150px);
+	-moz-transform: translateZ(150px);
+	-ms-transform: translateZ(150px);
+	-o-transform: translateZ(150px);
+}
+
+/*第二个面B*/
+.box .two{
+	-webkit-transform: rotateX(-90deg) translateZ(150px);
+	-moz-transform: rotateX(-90deg) translateZ(150px);
+	-ms-transform: rotateX(-90deg) translateZ(150px);
+	-o-transform: rotateX(-90deg) translateZ(150px);
+}
+
+/*第三个面C*/
+.box .three{
+	-webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(150px);
+	-moz-transform: rotateY(90deg) rotateX(90deg) translateZ(150px);
+	-ms-transform: rotateY(90deg) rotateX(90deg) translateZ(150px);
+	-o-transform: rotateY(90deg) rotateX(90deg) translateZ(150px);
+}
+
+/*第四个面D*/
+.box .four{
+	-webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(150px);
+	-moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(150px);
+	-ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(150px);
+	-o-transform: rotateY(180deg) rotateZ(90deg) translateZ(150px);
+}
+
+/*第五个面E*/
+.box .five{
+	-webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px);
+	-moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px);
+	-ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px);
+	-o-transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px);
+}
+
+/*第六个面F*/
+.box .six{
+	-webkit-transform: rotateY(90deg) translateZ(150px);
+	-moz-transform: rotateY(90deg) translateZ(150px);
+	-ms-transform: rotateY(90deg) translateZ(150px);
+	-o-transform: rotateY(90deg) translateZ(150px);
+}

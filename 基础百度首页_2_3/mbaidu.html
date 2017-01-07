@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>百度一下，你就知道</title>
+	<link rel="shrotcut icon" type="image/x-icon" href="img/screen_icon.png" />
+	<link rel="stylesheet" type="text/css" href="css/mbaidu.css" />
+</head>
+<body>
+	<div class="page">
+		<div class="index-card">
+			<div class="weather">
+				<div class="weather-outline">
+					<div class="icon-weather-default"></div>
+					<div class="weather-num">32°</div>
+					<div class="weather-status"><p>邯郸</p><p>空气&nbsp;49</p></div>
+					<i class="icon-down"></i>
+				</div>
+				<div class="weather-shield" data-height="248" style="height: 248px"></div>
+			</div>
+			<div class="skin-container" id="skin-container"></div>
+
+			<div class="header">
+				<div class="userinfo-wrap">
+					<div class="login-wraps">
+						<a id="login" class="icon-login" href="https://passport.baidu.com/v2/?login&u=https%3A%2F%2Fm.baidu.com"></a>
+					</div>
+				</div>
+				<div class="skin-wrap">
+					<a class="skin" href="javascript:;">
+						<i class="icon-skin"></i>
+					</a>
+				</div>
+				<div id="logo" class="noTapColor">
+					<img src="img/plus_logo.png" width="175" height="55" alt="百度一下，你就知道" />
+				</div>
+
+				<form class="se-form" id="index-form" action="/s" method="get" autocomplete="off">
+					<div class="con-wrap">
+						<input type="text" autocomplete="off" maxlength="64" id="index-kw" name="word" class="se-input" />
+						<div class="se-inner">
+							<div id="index-cross" class="cross" style="display: none;"></div>
+							<button id="index-bn" class="se-bn" type="submit">百度一下</button>
+						</div>
+					</div>
+				</form>
+
+				<div id="navs">
+					<a href="http://m.news.baidu.com/news?fr=mohome&amp;ssid=0&amp;from=&amp;uid=&amp;pu=sz%40224_220%2Cta%40iphone___3_537&amp;bd_page_type=1" data-stats="10|2|navs|a1_l1">
+					<i class="navs-news"></i>新闻</a>
+					<a href="http://dushu.baidu.com" data-stats="10|2|navs|a1_l2">
+					<i class="navs-novel"></i>小说</a>
+					<a href="http://video.m.baidu.com/?from=wise_nav" data-stats="10|2|navs|a1_l3">
+					<i class="navs-video"></i>视频</a>
+					<a href="https://m.nuomi.com/?cid=wise_shouye_nuomi" data-stats="10|2|navs|a1_l4">
+					<i class="navs-life"></i>糯米</a>
+					<a href="http://map.baidu.com/mobile/webapp/index/index/?itj=45&amp;wtj=wi&amp;ssid=0&amp;from=&amp;uid=&amp;pu=sz%40224_220%2Cta%40iphone___3_537&amp;bd_page_type=1" data-schema="baidumap://map?src=wise.show.index.nav" data-stats="10|2|navs|a1_l5">
+					<i class="navs-map"></i>地图</a>
+					<a href="javascript:;"><i class="navs-more"></i>更多</a>
+				</div>
+			</div>
+
+			<div class="menu-container">
+				<span class="menu-item current">关注</span>
+				<span class="menu-item">推荐</span>
+				<div class="slider firstcurrent0"></div>
+			</div>
+			
+			<div class="blank-frame">
+				<div class="center-content">
+					<div class="tab-wrap">
+						<div id="plus-card" class="plus_card water-container tab-mine-content">
+							<div id="nav" class="plus">
+								<div class="plus-title">
+									<div class="normal-title">
+										<i class="icon-nav"></i>
+										<h2>我的导航</h2>
+										<a href="javascript:;" class="plus-edit">
+											<i class="icon-edit"></i>
+										</a>
+									</div>
+								</div>
+
+								<div class="plus-content" id="nav-list" href="javascript:;">
+									<a href="http://m.hao123.com?itj=49" class="hao123">
+									<span>hao123</span>
+									<div data-icon="edit-close"></div>
+									</a>
+									<a href="http://image.baidu.com/wisebrowse/index?tag1=%E7%BE%8E%E5%A5%B3&amp;tag2=%E5%85%A8%E9%83%A8&amp;tag3=&amp;pn=0&amp;rn=10&amp;from=index&amp;fmpage=index&amp;pos=magic#/home">
+									<span>美女</span>
+									<div data-icon="edit-close"></div>
+									</a>
+									<a href="http://image.baidu.com/search/wiseindex?tn=wiseindex&amp;wiseps=1">
+									<span>图片</span>
+									<div data-icon="edit-close"></div>
+									</a>
+									<a href="http://m.iqiyi.com/">
+									<span>爱奇艺</span>
+									<div data-icon="edit-close"></div>
+									</a>
+									<a href="//m.baidu.com/from=0/s?word=%E7%83%AD%E9%97%A8%E7%94%B5%E8%A7%86%E5%89%A7&amp;sa=ipnav_5">
+									<span>电视剧</span>
+									<div data-icon="edit-close"></div>
+									</a>
+									<a class="to-view edit-add icon-add" href="javascript:;"></a>
+								</div>
+							</div>
+							
+							<div id="lbs" class="plus">
+								<div class="plus-title">
+									<div class="normal-title"><i class="icon-lbs"></i>
+									<h2> 生活服务</h2>
+										<a class="plus-edit" href="javascript:;">
+											<i class="icon-edit"></i>
+											<ul>
+												<li data-action="top">置顶</li>
+												<li data-action="close">关闭</li>
+											</ul>
+										</a>
+									</div>
+								</div>
+
+								<div class="plus-content">
+									<div class="gps-zone">
+										<div class="gps-info"><p>点击定位，查看附近位置信息</p></div>
+										<button>定位</button>
+										<span>
+											<i class="icon-position"></i>
+											<i class="icon-position-loading"></i>
+										</span>
+									</div>
+									<ul id="lbs-list">
+										<li>
+											<a href="http://vip.baidu.com/wiseui/goto/i?mall_id=601&amp;url=592c5sZv3Kgf2TJLdElUpL2qU3UZ7y5EbQyw1n8LcjFUuZOfb%2FOROc2VUD4FR4%2F4AkR%2FUNExJYNX5udQadVmvG0xn6Qk3MhbPznrhMiErxAsGtc0jJ%2FGb2I%2B&amp;statkey=zw_wiseshdy_m_601&amp;vip_frm=wise_shdy&amp;w=&quot;0_0_%E7%94%B5%E5%BD%B1&quot;" data-stats="10|2|lbs|a2_l1">
+											<div class="icon-film"></div>
+											<p>电影</p>
+											</a>
+										</li>
+										<li>
+											<a href="http://vip.baidu.com/wiseui/show/gotopartner?id=112&amp;url=febfzhq9de9L%2BbqHP5xwB9R4SSHjAAEMDxzRX%2FZW5SsERUvmnr3JLsLK5QockAB3SOpH%2BLpFdlrL7iQRnQo&amp;statkey=zw_wiseshnm_m_112&amp;vip_frm=wise_shnm&amp;w=&quot;0_0_%E5%9B%A2%E8%B4%AD&quot;" data-stats="10|2|lbs|a2_l2">
+											<div class="icon-groupon"></div><p>团购</p>
+											</a>
+										</li>
+										<li>
+											<a href="http://waimai.baidu.com/mobile/waimai?utm_source=baidu&amp;utm_medium=wise&amp;utm_content=default&amp;utm_term=default&amp;utm_campaign=default&amp;cid=993678&amp;w=&quot;0_0_%E5%A4%96%E5%8D%96&quot;" data-stats="10|2|lbs|a2_l3">
+											<div class="icon-takeout"></div><p>外卖</p>
+											</a>
+										</li>
+										<!-- <li>
+											<a href="https://rentcar.baidu.com/zuche/index/?third_party=wiseshfw_uber&amp;src_from=wiseshfw_uber&amp;w=&quot;0_0_%E6%89%93%E8%BD%A6&quot;" data-stats="10|2|lbs|a2_l4">
+											<div class="icon-taxi"></div><p>打车</p>
+											</a>
+										</li> -->
+									</ul>
+								</div>
+
+								<div class="plus-control more-control">
+									<span class="prompt">展开全部</span>
+									<i class="icon-arrow"></i>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div id="admin" class="tab-mine-foot" data-inited="1">管理我的关注</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="bottom">
+				<div class="foot">
+					<div>
+						<a href="http://ufosdk.baidu.com/?m=Client&a=commonsubmit&appid=517&activityId=1&needEmail=false&bw=36B26AF2992037569777F6432EC7E8B4&kw=&tn=iphone&pageid=6">
+						<i class="icon-feedback"></i>用户反馈
+						</a>
+					</div>
+					<a href="https://www.baidu.com/duty/wise/wise_index.html" class="index-copyright">使用百度前必读 Baidu 京ICP证030173号</a>
+					<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001" class="recordcode" target="_blank">
+					<i></i>京公网安备11000002000001号
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+.wrapper{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+
+.wrapper .top,
+.wrapper .left,
+.wrapper .middle,
+.wrapper .right,
+.wrapper .bottom
+{
+	width: 100px;
+	height: 100px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+	/*box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6),-3px -3px 5px rgba(0, 0, 0, 0.5);*/
+	/*border: 1px solid #999;*/
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+.wrapper .flex-box{
+	display: -webkit-box;	/*display: flex;*/
+	width: 300px;
+	height: 100px; 
+}
+
+.wrapper .top{
+	margin: 0 100px;
+	background: rgb(255, 238, 210);
+}
+.wrapper .right{
+	background: rgb(219, 208, 167);
+}
+.wrapper .bottom{
+	margin-left: 100px;
+	background: rgb(230, 208, 2);
+}
+.wrapper .left{
+	background: rgb(209, 76, 78);
+}
+.wrapper .middle{
+	border-radius: 50%;
+	background: rgb(18, 58, 85) url('../img/youtube.ico') no-repeat center;
+	background-size: 24px 24px;
+}

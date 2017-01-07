@@ -1,0 +1,210 @@
+/*画板框架*/
+		.paper{
+			width: 420px;
+		    height: 400px;
+		    margin: 0 auto;
+		    margin-top: 230px;
+		    position: relative;
+		    display: block;
+		}
+		/*头部*/
+		.head{
+			border-radius: 50%;
+		    position: absolute;
+		    top: 18px;
+		    left: 96px;
+		    width: 234px;
+		    height: 216px;
+		    border: 2px solid #000;
+		    border-top-left-radius: 130px 105px;
+		    border-top-right-radius: 130px 105px;
+		    border-bottom-left-radius: 130px 70px;
+		    border-bottom-right-radius: 130px 70px;
+		}
+		/*左眼部分*/
+		.lefteye{
+			left: 62px;
+		    top: 50px;
+		    width: 44px;
+		    height: 55px;
+		    border: 1px solid #000;
+		    border-radius: 50% 50%;
+		    position: absolute;
+		    background: #000;
+
+			-webkit-animation:flash 1s .2s ease both;
+			animation-iteration-count: infinite;
+		}
+			@-webkit-keyframes flash{
+			0%{-webkit-transform:scale(1)}
+			10%,20%{-webkit-transform:scale(0.9) rotate(-3deg)}
+			30%,50%,70%,90%{-webkit-transform:scale(1.1) rotate(3deg)}
+			40%,60%,80%{-webkit-transform:scale(1.1) rotate(-3deg)}
+			100%{-webkit-transform:scale(1) rotate(0)}
+		}
+		/*右眼部分*/
+		.righteye{
+			left: 123px;
+    		top: 50px;
+			width: 44px;
+		    height: 55px;
+		    border: 1px solid #000;
+		    border-radius: 50% 50%;
+		    position: absolute;
+		    background: #000;
+		}
+		/*左眼中间部分*/
+		.innerlefteye{
+			position: absolute;
+		    top: 20px;
+		    left: 20px;
+		    width: 18px;
+		    height: 24px;
+		    border-radius: 50%;
+		    border: 1px solid #000;
+		    background: #fff;
+		}
+		/*右眼中间部分*/
+		.innerrighteye{
+			position: absolute;
+		    top: 20px;
+		    left: 20px;
+		    width: 18px;
+		    height: 24px;
+		    border-radius: 50%;
+		    border: 1px solid #000;
+		    background: #fff;
+		}
+		/*左边脸蛋*/
+		.leftface{
+			position: absolute;
+		    top: 105px;
+		    left: 29px;
+		    width: 33px;
+		    height: 15px;
+		    border-radius: 50%;
+		    background: #C5B5B5;
+		}
+		/*右边脸蛋*/
+		.rightface{
+			position: absolute;
+		    top: 105px;
+		    left: 163px;
+		    width: 33px;
+		    height: 15px;
+		    border-radius: 50%;
+		    background: #C5B5B5;
+		}
+		/*嘴巴部分*/
+		.mouth{
+			border: 5px solid #000;
+		    background: #fff;
+		    width: 35px;
+		    height: 12px;
+		    position: absolute;
+		    top: 121px;
+		    left: 93px;
+		    border-top: none;
+		    border-bottom-left-radius: 50% 100%;
+		    border-bottom-right-radius: 50% 100%;
+
+		}
+		/*脚丫部分*/
+		.foot{
+			position: absolute;
+			top: 292px;
+			left: 80px;
+		}
+		/*1到5只脚丫*/
+		.foot1{
+			position: absolute;
+		    width: 62px;
+		    height: 36px;
+		    border: 2px solid #000;
+		    background: #FFFFFF;
+		    border-top-left-radius: 11% 47%;
+		    border-top-right-radius: 50% 44%;
+		    border-bottom-left-radius: 50% 56%;
+		    border-bottom-right-radius: 50% 56%;
+		    top: -106px;
+		    left: -22px;
+		    transform: scale(1.2) translate(10px,12px) skew(32deg,-15deg);
+		}
+		.foot2{
+			position: absolute;
+		    width: 53px;
+		    height: 53px;
+		    border: 2px solid #000;
+		    background: #FFFFFF;
+		    border-top-left-radius: 11% 47%;
+		    border-top-right-radius: 50% 44%;
+		    border-bottom-left-radius: 50% 56%;
+		    border-bottom-right-radius: 50% 56%;
+		    top: -68px;
+		    left: 13px;
+		    transform: scale(1.2) translate(23px,13px) skew(4deg,-31deg);
+		}
+		.foot3{
+			position: absolute;
+		    width: 47px;
+		    height: 69px;
+		    border: 2px solid #000;
+		    background: #FFFFFF;
+		    border-top-left-radius: 50% 39%;
+		    border-top-right-radius: 50% 75%;
+		    border-bottom-left-radius: 31% 28%;
+		    border-bottom-right-radius: 80% 37%;
+		    top: -74px;
+		    left: 95px;
+		    transform: scale(1.2) translate(16px,20px) skew(0deg,-3deg);
+		}
+		.foot4{
+			position: absolute;
+		    width: 51px;
+		    height: 38px;
+		    border: 2px solid #000;
+		    background: #FFFFFF;
+		    border-top-left-radius: 11% 47%;
+		    border-top-right-radius: 50% 44%;
+		    border-bottom-left-radius: 50% 56%;
+		    border-bottom-right-radius: 50% 56%;
+		    top: -68px;
+		    left: 138px;
+		    transform: scale(1.2) translate(37px,22px) skew(-36deg,40deg);
+		}
+		.foot5{
+			position: absolute;
+		    width: 62px;
+		    height: 36px;
+		    border: 2px solid #000;
+		    background: #FFFFFF;
+		    border-top-left-radius: 11% 47%;
+		    border-top-right-radius: 50% 44%;
+		    border-bottom-left-radius: 50% 56%;
+		    border-bottom-right-radius: 50% 56%;
+		    top: -88px;
+		    left: 150px;
+		    transform: scale(1.2) translate(70px,10px) skew(13deg,2deg)
+		}
+		/*end 5只脚丫*/
+
+		/*汽包*/
+		.bubble{
+			position: absolute;
+		    right: 69px;
+		    top: 23px;
+		    border: 0;
+		    width: 30px;
+		    height: 30px;
+		    border-radius: 50%;
+		    background-color: hotpink;
+
+			-webkit-animation:pulse 1s .2s ease both;
+			animation-iteration-count: infinite;
+		}
+			@-webkit-keyframes pulse{
+			0%{-webkit-transform:scale(1)}
+			50%{-webkit-transform:scale(1.1)}
+			100%{-webkit-transform:scale(1)}
+			}
+		}
